@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <title>VKS Enterprises</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__logo"><a href="#">VKS Enterprises</a></div>
+         <!-- Added separator line -->
+        <ul class="nav__links">
+          <li class="link"><a href="#home">HOME</a></li>
+          <li class="link"><a href="#about">ABOUT</a></li>
+          <li class="link"><a href="#Sales">SALES</a></li>
+          <li class="link"><a href="#contact">CONTACT</a></li>
+        </ul>
+    
+        <!-- Added Contact Us Button -->
+        <div class="nav__btns">
+          <a href="tel:+91XXXXXXXXXXXXXXX" class="btn btn__secondary contact-btn">Contact Us</a>
+        </div>
+    
+        <!-- Hamburger Menu -->
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </nav>
+    
+    <script>
+      // JavaScript for Hamburger Menu Toggle
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav__links");
+
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
+
+
+    
+    <header class="header">
+      <div class="header__container">
+        <div class="header__content">
+          <h1>A home built and unique with love and dreams</h1>
+          <p>
+            Discover a curated selection of homes, apartments, and commercial properties, along with expert tips, market
+            insights, and valuable resources to help you make the best real estate decisions. Join us today and let's unlock
+            the doors to your dream property!
+          </p>
+          <div class="header__btns">
+            <a href="tel:+91XXXXXXXXXXXXXXX" class="btn btn__secondary contact-btn">Contact Us</a>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="./assests/header.png" alt="header" loading="lazy" />
+        </div>
+      </div>
+    </header>
+    
+    <section class="section__container about__container animate-on-scroll" id="about">
+      <div class="about__image">
+        <img src="./assests/about.png" alt="about" loading="lazy" />
+      </div>
+      <div class="about__content">
+        <h2 class="section__header">About Us</h2>
+        <p class="section__subheader">
+          Whether you're a first-time homebuyer, a seasoned investor, or simply looking for a change, we're here to guide
+          you every step of the way. Our mission is to make your real estate journey smooth and successful.
+        </p>
+        <div class="about__grid">
+          <div class="about__card">
+            <h4>PREVIOUS PROJECTS</h4>
+            <p>34+</p>
+          </div>
+          <div class="about__card">
+            <h4>YEARS EXPERIENCE</h4>
+            <p>20+</p>
+          </div>
+          <div class="about__card">
+            <h4>ONGOING PROJECTS</h4>
+            <p>12</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="services">
+      <h2 class="services__heading">Our Services</h2>
+      <div class="services__row">
+        <div class="services__column">
+          <div class="services__card">
+            <div class="services__icon">
+              <i class="fas fa-hammer"></i>
+            </div>
+            <h3 class="services__title">Service Heading</h3>
+            <p class="services__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__card">
+            <div class="services__icon">
+              <i class="fas fa-brush"></i>
+            </div>
+            <h3 class="services__title">Service Heading</h3>
+            <p class="services__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__card">
+            <div class="services__icon">
+              <i class="fas fa-wrench"></i>
+            </div>
+            <h3 class="services__title">Service Heading</h3>
+            <p class="services__description">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <!-- <div class="container_card animate-on-scroll" id="Sales">
+      <h1>Sales</h1>
+    
+      <div class="cards animate-on-scroll">
+        <div class="card-item">
+          <div class="card-image" style="background-image: url('./assests/project-1.jpg');"></div>
+          <div class="card-info">
+            <h2 class="card-title">Exploring Around</h2>
+            <p class="card-intro">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+              there live the blind texts.</p>
+            <a href="tel:XXXXXXXXXXXXXXXXXXXXXX">
+              <button class="card-btn">Contact Us</button>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    
+      <div class="cards animate-on-scroll">
+        <div class="card-item">
+          <div class="card-image" style="background-image: url('./assests/project-2.jpg');"></div>
+          <div class="card-info">
+            <h2 class="card-title">A New Trail You Can't Miss</h2>
+            <p class="card-intro">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+              there live the blind texts.</p>
+            <a href="tel:XXXXXXXXXXXXXXXXXXXXXX">
+  <button class="card-btn">Contact Us</button>
+</a>
+
+          </div>
+        </div>
+      </div>
+    
+      <div class="cards animate-on-scroll">
+        <div class="card-item">
+          <div class="card-image" style="background-image: url('./assests/project-3.jpg');"></div>
+          <div class="card-info">
+            <h2 class="card-title">Inside the Outdoors</h2>
+            <p class="card-intro">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+              there live the blind texts.</p>
+            <a href="tel:XXXXXXXXXXXXXXXXXXXXXX">
+  <button class="card-btn">Contact Us</button>
+</a>
+
+          </div>
+        </div>
+      </div>
+    
+      <div class="cards animate-on-scroll">
+        <div class="card-item">
+          <div class="card-image" style="background-image: url('./assests/project-4.jpg');"></div>
+          <div class="card-info">
+            <h2 class="card-title">Essential Hiking Hacks</h2>
+            <p class="card-intro">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+              there live the blind texts.</p>
+            <a href="tel:XXXXXXXXXXXXXXXXXXXXXX">
+  <button class="card-btn">Contact Us</button>
+</a>
+
+          </div>
+        </div>
+      </div>
+    
+      <div class="cards animate-on-scroll">
+        <div class="card-item">
+          <div class="card-image" style="background-image: url('./assests/project-5.jpg');"></div>
+          <div class="card-info">
+            <h2 class="card-title">Discovering Hidden Gems</h2>
+            <p class="card-intro">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+              there live the blind texts.</p>
+            <a href="tel:XXXXXXXXXXXXXXXXXXXXXX">
+  <button class="card-btn">Contact Us</button>
+</a>
+
+          </div>
+        </div>
+      </div>
+    
+      <div class="cards animate-on-scroll">
+        <div class="card-item">
+          <div class="card-image" style="background-image: url('./assests/project-6.jpg');"></div>
+          <div class="card-info">
+            <h2 class="card-title">1-Day Routes for This Weekend</h2>
+            <p class="card-intro">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+              there live the blind texts.</p>
+            <a href="tel:XXXXXXXXXXXXXXXXXXXXXX">
+  <button class="card-btn">Contact Us</button>
+</a>
+
+          </div>
+        </div>
+      </div>
+    
+    </div> -->
+    
+
+    <!-- <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h4>VKS Enterprises</h4>
+          <p>
+            Our team of seasoned professionals is committed to providing you
+            with exceptional service, in-depth market knowledge, and
+            personalized solutions tailored to your unique needs.
+          </p>
+          <div class="footer__socials">
+            <span>
+              <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            </span>
+            <span>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </span>
+            <span>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </span>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Company Info</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#project">Project</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <a href="#">Terms</a>
+          <a href="#">Conditions</a>
+          <a href="#">Policy</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="#">
+            <span><i class="ri-mail-line"></i></span> VKS Enterprises@gmail.com
+          </a>
+          <a href="#">
+            <span><i class="ri-phone-line"></i></span> +91 xxxxxxxxxx
+          </a>
+        </div>
+      </div>
+      <div class="footer__bar">
+      </div>
+    </footer> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
